@@ -159,6 +159,7 @@ img {
 .link:focus {
   color: var(--accent-color);
 }
+
 /* Section Hero */
 
 .hero {
@@ -224,52 +225,22 @@ img {
 
 /* Section about us */
 
-.item::before {
-  display: block;
-  width: 270px;
+/*
+.about-us-item {
+  width: 70px;
+  height: 70px;
+}
+*/
+
+.about-us-icon-item {
+  width: 70px;
+  height: 70px;
+}
+
+.about-us-icon {
+  width: 100%;
   height: 120px;
-  content: '';
-
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.icon-antenna::before {
-  background-image: url(../images/antenna1.svg),
-    linear-gradient(
-      to bottom,
-      rgba(245, 244, 250, 0.72),
-      rgba(245, 244, 250, 0.72)
-    );
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock1.svg),
-    linear-gradient(
-      to bottom,
-      rgba(245, 244, 250, 0.72),
-      rgba(245, 244, 250, 0.72)
-    );
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram1.svg),
-    linear-gradient(
-      to bottom,
-      rgba(245, 244, 250, 0.72),
-      rgba(245, 244, 250, 0.72)
-    );
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut1.svg),
-    linear-gradient(
-      to bottom,
-      rgba(245, 244, 250, 0.72),
-      rgba(245, 244, 250, 0.72)
-    );
+  background-color: #f5f4fa;
 }
 
 .about-us {
@@ -397,10 +368,23 @@ img {
   text-align: center;
 }
 
-.social-icon {
-  padding: 12px;
+.team-social-link-item {
+  width: 20px;
+  height: 20px;
 }
 
+.social-icon {
+  padding: 12px;
+  border-radius: 50%;
+}
+.social-icon:hover .team-social-link-item {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
+.social-icon:hover {
+  background-color: var(--accent-color);
+}
 .social-list {
   display: flex;
   justify-content: space-between;
