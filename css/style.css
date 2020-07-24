@@ -113,6 +113,10 @@ img {
   fill: var(--accent-color);
 }
 
+.contact-link:focus .contact-icon {
+  fill: var(--accent-color);
+}
+
 .contact-link {
   text-decoration: none;
   text-align: center;
@@ -143,6 +147,10 @@ img {
 .site-nav .container {
   display: flex;
   align-items: center;
+}
+
+.site-nav {
+  border-bottom: 1px solid #ececec;
 }
 
 .nav-list {
@@ -228,9 +236,6 @@ img {
   border-radius: 4px;
 }
 
-.button:focus {
-}
-
 .hero .button {
   margin-left: auto;
   margin-right: auto;
@@ -238,13 +243,6 @@ img {
 }
 
 /* Section about us */
-
-/*
-.about-us-item {
-  width: 70px;
-  height: 70px;
-}
-*/
 
 .about-us-icon-item {
   width: 70px;
@@ -378,12 +376,14 @@ img {
   padding: 12px;
   border-radius: 50%;
 }
-.social-icon:hover .team-social-link-item {
+.social-icon:hover .team-social-link-item,
+.social-icon:focus .team-social-link-item {
   background-color: var(--accent-color);
   fill: #fff;
 }
 
-.social-icon:hover {
+.social-icon:hover,
+.social-icon:focus {
   background-color: var(--accent-color);
 }
 
@@ -425,10 +425,6 @@ img {
   padding-bottom: 94px;
 }
 
-.customers-list-link:hover {
-  color: var(--accent-color);
-}
-
 .customers-list-logo:not(:last-child) {
   margin-right: 30px;
 }
@@ -452,7 +448,12 @@ img {
   fill: var(--accent-color);
 }
 
-.customers-list-logo:hover {
+.customers-list-logo:focus .client-link-item {
+  fill: var(--accent-color);
+}
+
+.customers-list-logo:hover,
+.customers-list-logo:focus {
   border-radius: 4px;
   border: 1px solid var(--accent-color);
 }
@@ -550,7 +551,8 @@ div > b {
   margin-right: 8px;
 }
 
-.portfolio-list-item:hover {
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
