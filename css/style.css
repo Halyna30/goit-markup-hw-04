@@ -371,6 +371,7 @@ img {
 .team-social-link-item {
   width: 20px;
   height: 20px;
+  fill: #afb1b8;
 }
 
 .social-icon {
@@ -379,12 +380,13 @@ img {
 }
 .social-icon:hover .team-social-link-item {
   background-color: var(--accent-color);
-  fill: #ffffff;
+  fill: #fff;
 }
 
 .social-icon:hover {
   background-color: var(--accent-color);
 }
+
 .social-list {
   display: flex;
   justify-content: space-between;
@@ -497,6 +499,12 @@ div > b {
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-social-link-item {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
 }
 
 /* Portfolio Page */
