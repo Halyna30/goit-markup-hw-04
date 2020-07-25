@@ -24,6 +24,19 @@ html {
   --second-text-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -105,10 +118,6 @@ img {
   border-radius: 2px;
 }
 
-.contact-icon {
-  fill: #757575;
-}
-
 .contact-link:hover .contact-icon {
   fill: var(--accent-color);
 }
@@ -117,10 +126,15 @@ img {
   fill: var(--accent-color);
 }
 
-.contact-link {
-  text-decoration: none;
-  text-align: center;
+.link.contact-link {
+  display: flex;
   align-items: center;
+  text-decoration: none;
+}
+
+.contact-icon {
+  fill: #757575;
+  margin-right: 10px;
 }
 
 /* Logo */
