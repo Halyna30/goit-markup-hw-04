@@ -164,7 +164,8 @@ img {
 }
 
 .site-nav {
-  border-bottom: 1px solid #ececec;
+  outline: 1px solid #ececec;
+  outline-offset: -1px;
 }
 
 .nav-list {
@@ -219,6 +220,8 @@ img {
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -269,12 +272,13 @@ img {
   align-items: center;
   width: 100%;
   height: 120px;
+  margin-bottom: 30px;
   background-color: #f5f4fa;
 }
 
 .about-us {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 47px;
 }
 
 .about-us-list {
@@ -293,6 +297,7 @@ img {
 }
 
 .about-us-list .title {
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -318,7 +323,12 @@ img {
 }
 
 .our-work {
+  padding-top: 47px;
   padding-bottom: 94px;
+}
+
+.our-work .title {
+  margin-top: 0;
 }
 
 /* Section our team*/
@@ -343,6 +353,7 @@ img {
 }
 
 .team-list-item {
+  background-color: #ffffff;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
@@ -353,8 +364,9 @@ img {
 }
 
 .title {
-  color: var(--title-text-color);
+  margin-top: 0;
   margin-bottom: 50px;
+  color: var(--title-text-color);
 }
 
 .item-title {
