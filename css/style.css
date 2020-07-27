@@ -90,6 +90,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 .header-contacts {
   display: flex;
@@ -129,7 +130,6 @@ img {
 .link.contact-link {
   display: flex;
   align-items: center;
-  text-decoration: none;
 }
 
 .contact-icon {
@@ -161,11 +161,6 @@ img {
 .site-nav .container {
   display: flex;
   align-items: center;
-}
-
-.site-nav {
-  outline: 1px solid #ececec;
-  outline-offset: -1px;
 }
 
 .nav-list {
@@ -313,9 +308,18 @@ img {
 }
 
 .item-title {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
   padding-top: 27px;
   padding-bottom: 27px;
   margin: 0;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--second-text-color);
+  text-align: center;
 }
 
 .work-list-item:not(:last-child) {
@@ -367,12 +371,6 @@ img {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
-}
-
-.item-title {
-  background-color: rgba(47, 48, 58, 0.8);
-  color: var(--second-text-color);
-  text-align: center;
 }
 
 .team h3 {
@@ -555,6 +553,8 @@ div > b {
   padding-bottom: 94px;
 }
 
+/* Portfolio button */
+
 .portfolio-list-button {
   padding-top: 94px;
   padding-bottom: 50px;
@@ -578,12 +578,6 @@ div > b {
   margin-right: 8px;
 }
 
-.portfolio-list-item:hover,
-.portfolio-list-item:focus {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
-}
-
 .list-buttons .portfolio-button {
   display: block;
   padding: 6px 22px;
@@ -595,6 +589,14 @@ div > b {
   background: #f5f4fa;
   border-width: 0;
   border-radius: 4px;
+}
+
+/* Portfolio gallery */
+
+.portfolio-list-item:hover,
+.portfolio-list-item:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-button:hover,
@@ -636,10 +638,10 @@ div > b {
 }
 
 .work-item {
+  position: relative;
   display: block;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  overflow: hidden;
 }
 
 .portfolio-list-item:not(:nth-child(3n + 3)) {
@@ -660,4 +662,30 @@ div > b {
 }
 .portfolio-link {
   display: block;
+}
+
+.portfolio-link:hover .hover-desc {
+  opacity: 1;
+}
+
+.work-item-desc {
+  position: relative;
+}
+
+.hover-desc {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  margin: 0;
+
+  padding: 63px 24px;
+  font-size: 18px;
+  color: var(--second-text-color);
+  line-height: 1.56;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  opacity: 0;
 }
